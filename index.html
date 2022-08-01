@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>toDo</title>
 </head>
 <body>
-    
+    <div class="main-container">
+        <h1>ToDo List</h1>  
+        <div class="block-add-task">
+            <input type="text" class="description-task">
+            <button class="add-task">
+                <span class="add-task__plus">+</span>
+            </button>
+        </div>
+        <h2>Задачи :</h2>
+        <div class="selector-task">
+            <button class="all">All</button>
+            <button class="act">Activ</button>           <!-- ДЛЯ КНОПОК НЕ ПРИМЕНЯЕТСЯ СТИЛЬ button :focus -->
+            <button class="comp">Completed</button>
+        </div>
+        <ol class="todo-list">
+            <!-- Контент -->
+        </ol>
+        <!-- <div class="footer">* If you need to change the task, follow the instructions.<br> Write the correct text in the input chapter and click the edit button for the required task</div> -->
+        <script src="./script.js"></script>
+    </div>
 </body>
 </html>
